@@ -11,13 +11,14 @@ class PersonnageFactory{
         let taille=this.generer_taille(genre);
         let carriere=this.generer_la_carriere();
         let nom_carriere=this.trouver_nom_carriere_selon_genre(genre, carriere);
+        let richesse= this.generer_richesse(carriere);
         let vertu=this.generer_la_vertu();
         let vice=this.generer_le_vice();
         let propriete= this.generer_propriete(carriere);
 
         surnom = this.verifier_surnom_genre_taille(genre,taille, surnom)
 
-        return new Personnage(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, vertu, vice, propriete)
+        return new Personnage(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, vertu, vice, propriete)
     }
 
     generer_genre (){
@@ -149,7 +150,12 @@ class PersonnageFactory{
 
     }
 
+    generer_richesse(carriere){
+        let richesse_depart_personnage
+        richesse_depart_personnage = carriere.revenu * 5
 
+        return richesse_depart_personnage
+    }
 
 
     generer_la_vertu(){
@@ -189,9 +195,6 @@ class PersonnageFactory{
         carriere.propriete.forEach(propriete => {
             propriete_personnage.push(propriete)
         })
-        if (carriere.revenu > 20){
-            propriete_personnage.push("Palace")
-        }
 
         return propriete_personnage
     }

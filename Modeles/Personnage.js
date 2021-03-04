@@ -1,6 +1,6 @@
 class Personnage {
 
-    constructor(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, vertu, vice, propriete){
+    constructor(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, vertu, vice, propriete){
         this._genre=genre;
         this._nom=nom;
         this._prenom=prenom;
@@ -9,6 +9,7 @@ class Personnage {
         this._taille=taille;
         this._carriere=carriere;
         this._nom_carriere=nom_carriere;
+        this._richesse=richesse;
         this._vertu=vertu;
         this._vice=vice;
         this._propriete=propriete;
@@ -77,6 +78,15 @@ class Personnage {
     set nom_carriere(e){
         this._nom_carriere = e
     }
+
+    get richesse(){
+        return this._richesse
+    }
+
+    set richesse(e){
+        this._richesse = e
+    }
+
 
     get vertu(){
         return this._vertu

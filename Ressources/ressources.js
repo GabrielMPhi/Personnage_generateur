@@ -7,7 +7,6 @@ let ressources = {
     liste_de_surnom_homme: ["Sharp", "Le gros", "Le juste", "Toujours perdu", "Le sauvage", "Le fêtard", "Doigts crochus", "Oeil de lynx", "Le ténébreux", "Le Beau", "le monstre", "le courtisan"],
     liste_de_surnom_femme: ["La juste", "L'orgueilleuse", "L'intriguante", "La naine", "la traîtresse", "La grande", "La fourbe", "L'érudite", "La sage", "La grande", "la subtile"],
     liste_surnom_total: [],
-    liste_intrigues_et_mystere : ["Aime les démons", "Fait de la philosophie"],
     liste_des_carrieres_possible : [],
     liste_des_vertus : ["courage", "espoir", "générosité"],
     liste_des_vices : ["envie", "paresse"],

@@ -3,6 +3,10 @@ document.getElementById("btn_generer").addEventListener("click", function(e){
     let personnage_factory = new PersonnageFactory()
     personnage = personnage_factory.creer_personnage()
 
+    evenements_au_debut(personnage)
+
+
+
     document.getElementById("nom_personnage").innerHTML = personnage.nom
     document.getElementById("prenom_personnage").innerHTML = personnage.prenom
     document.getElementById("surnom_personnage").innerHTML = personnage.surnom
@@ -24,10 +28,6 @@ document.getElementById("btn_generer").addEventListener("click", function(e){
 
         document.getElementById("propriete_personnage").appendChild(div_box_propriete);
     });
-
-
-
-
 
 
 })
