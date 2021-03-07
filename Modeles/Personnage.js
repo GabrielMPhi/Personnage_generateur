@@ -1,6 +1,6 @@
 class Personnage {
 
-    constructor(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, vertu, vice, propriete){
+    constructor(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, vertu, vice, propriete, historique){
         this._genre=genre;
         this._nom=nom;
         this._prenom=prenom;
@@ -13,6 +13,7 @@ class Personnage {
         this._vertu=vertu;
         this._vice=vice;
         this._propriete=propriete;
+        this._historique=historique;
     }
 
     get nom(){
@@ -111,4 +112,14 @@ class Personnage {
     set propriete(e){
         this._propriete = e
     }
+
+    get historique(){
+        return this._historique
+    }
+
+    set historique(e){
+        this._historique = e
+    }
+
+
 }

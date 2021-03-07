@@ -15,10 +15,11 @@ class PersonnageFactory{
         let vertu=this.generer_la_vertu();
         let vice=this.generer_le_vice();
         let propriete= this.generer_propriete(carriere);
+        let historique= this.generer_historique();
 
         surnom = this.verifier_surnom_genre_taille(genre,taille, surnom)
 
-        return new Personnage(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, vertu, vice, propriete)
+        return new Personnage(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, vertu, vice, propriete, historique)
     }
 
     generer_genre (){
@@ -199,5 +200,13 @@ class PersonnageFactory{
         return propriete_personnage
     }
 
+    generer_historique(){
+        let historique_genere = [];
+        let historique_enfance = ressources.liste_des_historiques_enfance[Math.floor(Math.random() * ressources.liste_des_historiques_enfance.length)]
+        let historique_adolescence = ressources.liste_des_historiques_adolescence[Math.floor(Math.random() * ressources.liste_des_historiques_adolescence.length)]
+        let historique_adulte = ressources.liste_des_historiques_adulte[Math.floor(Math.random() * ressources.liste_des_historiques_adulte.length)] 
+        historique_genere.push(historique_enfance, historique_adolescence, historique_adulte)
+        return historique_genere
+    }
 
 }

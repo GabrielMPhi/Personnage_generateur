@@ -8,6 +8,9 @@ let ressources = {
     liste_de_surnom_femme: ["La juste", "L'orgueilleuse", "L'intriguante", "La naine", "la traîtresse", "La grande", "La fourbe", "L'érudite", "La sage", "La grande", "la subtile"],
     liste_surnom_total: [],
     liste_des_carrieres_possible : [],
+    liste_des_historiques_enfance: [],
+    liste_des_historiques_adolescence:[],
+    liste_des_historiques_adulte: [],
     liste_des_vertus : ["courage", "espoir", "générosité"],
     liste_des_vices : ["envie", "paresse"],
 }
