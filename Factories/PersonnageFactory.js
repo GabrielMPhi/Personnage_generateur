@@ -94,13 +94,13 @@ class PersonnageFactory{
 
         let random_pourcentage = getRandomInt(20)
         if (random_pourcentage == 1){
-            taille_finale=taille_finale-5
+            taille_finale=taille_finale-getRandomInt(15)
         }
         else if (random_pourcentage == 4){
             taille_finale=taille_finale-getRandomInt(10)
         }
         else if (random_pourcentage == 5){
-            taille_finale=taille_finale+getRandomInt(20)
+            taille_finale=taille_finale+getRandomInt(35)
         }
 
         return taille_finale

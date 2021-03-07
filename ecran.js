@@ -5,8 +5,6 @@ document.getElementById("btn_generer").addEventListener("click", function(e){
 
     evenements_au_debut(personnage)
 
-    console.log(personnage)
-
     document.getElementById("nom_personnage").innerHTML = personnage.nom
     document.getElementById("prenom_personnage").innerHTML = personnage.prenom
     document.getElementById("surnom_personnage").innerHTML = personnage.surnom
@@ -28,7 +26,6 @@ document.getElementById("btn_generer").addEventListener("click", function(e){
 
         document.getElementById("propriete_personnage").appendChild(div_box_propriete);
     });
-    console.log(personnage.historique[0].descriptif)
     document.getElementById("historique_personnage").innerHTML = ""
     personnage._historique.forEach(historique => {
         let div_box_historique = document.createElement("div")

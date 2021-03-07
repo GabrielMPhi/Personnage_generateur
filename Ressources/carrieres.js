@@ -95,7 +95,7 @@ let mineur = {
     nom_masculin : "Mineur",
     nom_feminin : "Mineure",
     revenu : 15,
-    propriete : ["Auberge"],
+    propriete : ["Auberge", "Bière"],
     competences : {
         
     },
