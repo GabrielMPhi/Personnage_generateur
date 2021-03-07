@@ -91,7 +91,16 @@ let aubergiste = {
     },
 }
 
+let mineur = {
+    nom_masculin : "Mineur",
+    nom_feminin : "Mineure",
+    revenu : 15,
+    propriete : ["Auberge"],
+    competences : {
+        
+    },
+}
 
-// ["Crieur public", "Mineur", "Milicien", "Mendiant", "nécromentien", "démoniste", "mendiante", "initiée", "dueliste", "archiviste", "démoniste", "nécromantienne"],
+// ["Crieur public", "Milicien", "Mendiant", "nécromentien", "démoniste", "mendiante", "initiée", "dueliste", "archiviste", "démoniste", "nécromantienne"],
 
-ressources.liste_des_carrieres_possible.push(noble, aubergiste, sorcier, juge, avocate, pretre, apothicaire, soldat, agitateur)
+ressources.liste_des_carrieres_possible.push(noble, aubergiste, sorcier, juge, avocate, pretre, apothicaire, soldat, agitateur, mineur)

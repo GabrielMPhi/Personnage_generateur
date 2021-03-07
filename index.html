@@ -1,153 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://unpkg.com/bulmaswatch/superhero/bulmaswatch.min.css">
-        <style>
-        </style>
-    </head>
-    <body>
-        <div id="app">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulmaswatch/superhero/bulmaswatch.min.css"
+    />
+    <style></style>
+  </head>
 
-            <div>
-                <input type="button" class="button" id="btn_generer" value="generer" />
+  <body>
+    <div id="app">
+      <div>
+        <input type="button" class="button" id="btn_generer" value="generer" />
+      </div>
+
+      <div class="box">
+        <div id="description_du_personnage_HTML">
+          <div class="columns">
+            <div class="column">
+              <div>Prenom</div>
+
+              <div class="box" id="prenom_personnage"></div>
             </div>
 
-            <div class="box">
+            <div class="column">
+              <div>Surnom</div>
 
-                <div id="description_du_personnage_HTML">
+              <div class="box" id="surnom_personnage"></div>
+            </div>
 
-                    <div class="columns">
+            <div class="column">
+              <div>Nom</div>
 
+              <div class="box" id="nom_personnage"></div>
+            </div>
+          </div>
 
-                        <div class="column">
-                            <div>
-                                Prenom
-                            </div>
+          <div class="columns">
+            <div class="column">
+              <div class="columns">
+                <div class="column">
+                  <div>Age</div>
 
-                            <div class="box" id="prenom_personnage"></div>
-                        </div>
+                  <div class="box" id="age_personnage"></div>
 
-                        <div class="column">
-                            <div>
-                                Surnom 
-                            </div>
+                  <div>Carrière</div>
+                  <div class="box" id="carriere_personnage"></div>
 
-                            <div class="box" id="surnom_personnage"></div>
-                            
-                        </div>
-
-
-                        <div class="column">
-                            <div>
-                                Nom 
-                            </div>
-
-                            <div class="box" id="nom_personnage"></div>
-                        </div>
-                    </div>
-
-                    <div class="columns">
-                                                      
-
-                        <div class="column"> 
-                            <div class="columns"> 
-                                <div class="column">
-
-                                    <div>
-                                        Age 
-                                    </div>
-                                
-                                    <div class="box" id="age_personnage"></div>
-
-
-                                    <div>
-                                        Carrière 
-                                    </div>
-                                    <div class="box" id="carriere_personnage"></div>
-
-                                    <div>
-                                        Propriété 
-                                    </div>
-                                    <div class="box" id="propriete_personnage"></div>
-
-
-                                </div>
-                                
-                                <div class="column">
-
-                                    <div>
-                                        Taille 
-                                    </div>
-
-                                    <div class="box" id="taille_personnage"></div>
-
-                                    <div>
-                                        Richesse 
-                                    </div>
-
-                                    <div class="box" id="richesse_personnage"></div>
-
-                                    <div>
-                                        Historique 
-                                    </div>
-
-                                    <div class="box" id="historique_personnage"></div>
-
-
-                                </div>
-
-
-
-                            </div>
-                        </div>
-
-                        <div class="column">
-                            <div id="image_armoirie"></div>
-                        </div>
-
-                    </div>
-
-
-
-                    <div>
-
-                    </div>
-
-
-
-
-
+                  <div>Propriété</div>
+                  <div class="box" id="propriete_personnage"></div>
                 </div>
 
+                <div class="column">
+                  <div>Taille</div>
+
+                  <div class="box" id="taille_personnage"></div>
+
+                  <div>Richesse</div>
+
+                  <div class="box" id="richesse_personnage"></div>
+
+                  <div>Historique</div>
+
+                  <div class="box" id="historique_personnage"></div>
+                </div>
+              </div>
             </div>
 
+            <div class="column">
+              <div id="image_armoirie"></div>
+            </div>
+          </div>
 
-
-
-                    
+          <div></div>
         </div>
+      </div>
+    </div>
+  </body>
 
+  <script type="text/javascript" src="Ressources/ressources.js"></script>
+  <script type="text/javascript" src="Ressources/carrieres.js"></script>
+  <script type="text/javascript" src="Ressources/historique.js"></script>
+  <script type="text/javascript" src="Ressources/noms.js"></script>
+  <script type="text/javascript" src="evenements.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 
+  <script type="text/javascript" src="ecran.js"></script>
+  <script type="text/javascript" src="Modeles/Personnage.js"></script>
 
-
-
-
-
-
-    </body>
-    
-    <script type="text/javascript" src="Ressources/ressources.js"></script>
-    <script type="text/javascript" src="Ressources/carrieres.js"></script>
-    <script type="text/javascript" src="Ressources/historique.js"></script>
-    <script type="text/javascript" src="evenements.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-
-    <script type="text/javascript" src="ecran.js"></script>
-    <script type="text/javascript" src="Modeles/Personnage.js"></script>
-
-
-    <script type="text/javascript" src="Factories/PersonnageFactory.js"></script>
-
-    </html>
-
+  <script type="text/javascript" src="Factories/PersonnageFactory.js"></script>
+</html>

@@ -1,8 +1,8 @@
 let ressources = {
-    liste_prenoms_habitant_homme: ["Bernard", "Martin", "Gabriel", "Mathieu", "Arthur", "Thomas", "Christian", "Simon", "Geralt", "Alexandre", "Étienne", "François", "Quark", "Luc", "Maxime"],
-    liste_prenoms_habitant_femme: ["Catherine", "Florence", "Sophia", "Morgane", "Rieke", "Julia", "Linda", "Christina", "Anne-Sophie", "Anne-Marie", "Marie-Pier", "Marie", "Anne", "Anzhe", "Anna", "Rapunzel", "Éloise", "Elionor", "Samantha", "Arlette", "Ilona", "Ida", "Louise"],
+    liste_prenoms_habitant_homme: [],
+    liste_prenoms_habitant_femme: [],
     liste_prenoms_personnages_total: [],
-    noms_famille_personnages: ["Monette", "Ducharme", "Carel", "Dax", "Rideout", "Delorme", "Picard", "Sisko", "Janeway", "Pratte", "Séguin", "Gagné", "Turpin", "Bouras", "De Rivia", "Côté", "Gingras", "Delorme", "Picard", "Sisko", "Janeway", "Pratte", "Séguin", "Gagné", "Turpin", "Bouras", "De Rivia", "Côté", "Gingras", "Jorkunite"],
+    noms_famille_personnages: ["Monette", "Ducharme", "Carel", "Dax", "Rideout", "Delorme", "Picard", "Sisko", "Janeway", "Pratte", "Séguin", "Gagné", "Turpin", "Bouras", "De Rivia", "Côté", "Gingras", "Delorme", "Picard", "Sisko", "Janeway", "Pratte", "Séguin", "Gagné", "Turpin", "Bouras", "De Rivia", "Côté", "Gingras", "Jorkunite", "Oloye"],
     liste_genre : ["Homme", "Femme", "Homme", "Femme", "Homme", "Femme", "Non-binaire"],
     liste_de_surnom_homme: ["Sharp", "Le gros", "Le juste", "Toujours perdu", "Le sauvage", "Le fêtard", "Doigts crochus", "Oeil de lynx", "Le ténébreux", "Le Beau", "le monstre", "le courtisan"],
     liste_de_surnom_femme: ["La juste", "L'orgueilleuse", "L'intriguante", "La naine", "la traîtresse", "La grande", "La fourbe", "L'érudite", "La sage", "La grande", "la subtile"],
@@ -15,8 +15,7 @@ let ressources = {
     liste_des_vices : ["envie", "paresse"],
 }
 
-ressources.liste_prenoms_personnages_total = [].concat(ressources.liste_prenoms_habitant_homme, ressources.liste_prenoms_habitant_femme)
-ressources.liste_surnom_total = [].concat(ressources.liste_de_surnom_homme, ressources.liste_de_surnom_femme)
+
 
 
 

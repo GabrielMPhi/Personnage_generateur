@@ -31,5 +31,12 @@ let vie_adulte_de_banlieusard = {
     },
 }
 
-ressources.liste_des_historiques_adulte.push(vie_adulte_de_banlieusard)
+let vie_adulte_pleine_de_succes_pro = {
+    descriptif : "Vie Awesome",
+    effet_sur_statistique : {
+        
+    },
+}
+
+ressources.liste_des_historiques_adulte.push(vie_adulte_de_banlieusard, vie_adulte_pleine_de_succes_pro)
 
