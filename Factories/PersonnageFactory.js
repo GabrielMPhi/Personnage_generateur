@@ -15,11 +15,12 @@ class PersonnageFactory{
         let vertu=this.generer_la_vertu();
         let vice=this.generer_le_vice();
         let propriete= this.generer_propriete(carriere);
+        let amis=[];
         let historique= this.generer_historique();
 
         surnom = this.verifier_surnom_genre_taille(genre,taille, surnom)
 
-        return new Personnage(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, vertu, vice, propriete, historique)
+        return new Personnage(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, vertu, vice, propriete, amis, historique)
     }
 
     generer_genre (){
@@ -199,6 +200,9 @@ class PersonnageFactory{
 
         return propriete_personnage
     }
+
+
+
 
     generer_historique(){
         let historique_genere = [];

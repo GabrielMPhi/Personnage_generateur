@@ -25,8 +25,8 @@ let NormalrandNum = function creer_rand_num(){
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
-  }
+}
 
 function getRandomNormalInt(max) {
     return Math.floor(NormalrandNum() * Math.floor(max));
-    }
+}

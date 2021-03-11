@@ -12,6 +12,7 @@ class Personnage {
     vertu,
     vice,
     propriete,
+    amis,
     historique
   ) {
     this._genre = genre;
@@ -27,6 +28,7 @@ class Personnage {
     this._vice = vice;
     this._propriete = propriete;
     this._historique = historique;
+    this._amis=amis;
   }
 
   get nom() {
@@ -115,6 +117,14 @@ class Personnage {
 
   set propriete(e) {
     this._propriete = e;
+  }
+
+  get amis() {
+    return this._amis;
+  }
+
+  set amis(e) {
+    this._amis = e;
   }
 
   get historique() {
