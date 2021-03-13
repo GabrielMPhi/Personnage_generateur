@@ -18,7 +18,15 @@ const affichage_personnage_propriete = document.getElementById("propriete_person
 const affichage_personnage_historique = document.getElementById("historique_personnage")
 const affichage_personnage_amis = document.getElementById("amis_personnage")
 const affichage_personnage_vertu_courage = document.getElementById("courage_personnage")
-let affichage_personnage_progress_vertu_courage = document.querySelector("#progress_courage_personnage")
+const affichage_personnage_progress_vertu_courage = document.querySelector('#progress_courage_personnage')
+const affichage_personnage_vertu_generosite_personnage = document.getElementById("generosite_personnage")
+const affichage_personnage_progress_vertu_generosite_personnage = document.querySelector('#progress_generosite_personnage_personnage')
+
+const affichage_personnage_vertu_ambition_personnage = document.getElementById("ambition_personnage")
+const affichage_personnage_progress_vertu_ambition_personnage = document.querySelector('#progress_ambition_personnage_personnage')
+
+
+
 
 
 affichage_personnage_nom.innerHTML = personnage.nom
@@ -34,6 +42,14 @@ affichage_personnage_historique.innerHTML = ""
 affichage_personnage_amis.innerHTML = ""
 affichage_personnage_vertu_courage.innerHTML = personnage.morale['_courage']['_nomVertu']
 affichage_personnage_progress_vertu_courage.value = personnage.morale['_courage']['_valeurVertu']
+affichage_personnage_vertu_generosite_personnage.innerHTML = personnage.morale['_generosite']['_nomVertu']
+affichage_personnage_progress_vertu_generosite_personnage.value = personnage.morale['_generosite']['_valeurVertu']
+affichage_personnage_vertu_ambition_personnage.innerHTML = personnage.morale['_ambition']['_nomVertu']
+affichage_personnage_progress_vertu_ambition_personnage.value = personnage.morale['_ambition']['_valeurVertu']
+
+
+
+
 
 
     personnage._propriete.forEach(propriete => {

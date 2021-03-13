@@ -2,7 +2,7 @@ class Moralite {
 
     constructor(genre){
         this._courage = this.generer_vertu_courage(genre),
-        this._generosite=this.generer_vertu_courage(genre),
+        this._generosite=this.generer_vertu_generosite(genre),
         this._ambition=this.generer_vertu_courage(genre),
         this._modestie=this.generer_vertu_courage(genre),
         this._humour=this.generer_vertu_courage(genre),
@@ -28,7 +28,29 @@ class Moralite {
             }
     
         return new VertuVice(valeur_courage, mot_courage_a_afficher)
-        }
+    }
 
+
+    generer_vertu_generosite(genre){
+        let valeur_generosite = getRandomInt(15)
+        let mot_generosite_a_afficher
+            if (valeur_generosite <= 5){
+                mot_generosite_a_afficher = 'Avare'
+            } else if (valeur_generosite >= 10){
+                if (genre == "Homme"){
+                    mot_generosite_a_afficher = 'Extravagant'
+                } else {
+                    mot_generosite_a_afficher = 'Extravagante'
+                }
+            } else {
+                if (genre == "Homme"){
+                    mot_generosite_a_afficher = 'Généreux'
+                } else {
+                    mot_generosite_a_afficher = 'Généreuse'
+                }
+            }
+    
+        return new VertuVice(valeur_generosite, mot_generosite_a_afficher)
+    }
 
 }
