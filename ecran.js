@@ -1,10 +1,11 @@
-document.getElementById("btn_generer").addEventListener("click", function(e){
+const btn_generer = document.querySelector("#btn_generer")
+
+btn_generer.addEventListener("click", function(e){
 
     let personnage_factory = new PersonnageFactory()
     personnage = personnage_factory.creer_personnage()    
 
     evenements_au_debut(personnage)
-
 const affichage_personnage_nom = document.querySelector("#nom_personnage")
 const affichage_personnage_prenom = document.getElementById("prenom_personnage")
 const affichage_personnage_surnom = document.getElementById("surnom_personnage")
@@ -16,6 +17,8 @@ const affichage_personnage_image_armoirie = document.getElementById("image_armoi
 const affichage_personnage_propriete = document.getElementById("propriete_personnage")
 const affichage_personnage_historique = document.getElementById("historique_personnage")
 const affichage_personnage_amis = document.getElementById("amis_personnage")
+const affichage_personnage_vertu_courage = document.getElementById("courage_personnage")
+let affichage_personnage_progress_vertu_courage = document.querySelector("#progress_courage_personnage")
 
 
 affichage_personnage_nom.innerHTML = personnage.nom
@@ -25,11 +28,14 @@ affichage_personnage_taille.innerHTML = personnage.taille + " cm"
 affichage_personnage_age.innerHTML = personnage.age + " ans"
 affichage_personnage_carriere.innerHTML = personnage.nom_carriere
 affichage_personnage_richesse.innerHTML = personnage.carriere.revenu + " pièces"
-affichage_personnage_image_armoirie.innerHTML = "<img src='https://armoria.herokuapp.com/?size=300&format=png' alt='Armoirie' />"
+affichage_personnage_image_armoirie.innerHTML = "<div class=\"box\"><img src='https://armoria.herokuapp.com/?size=300&format=png' alt='Armoirie' /></div>"
 affichage_personnage_propriete.innerHTML = ""
 affichage_personnage_historique.innerHTML = ""
 affichage_personnage_amis.innerHTML = ""
-    
+affichage_personnage_vertu_courage.innerHTML = personnage.morale['_courage']['_nomVertu']
+affichage_personnage_progress_vertu_courage.value = personnage.morale['_courage']['_valeurVertu']
+
+
     personnage._propriete.forEach(propriete => {
 
         let div_box_propriete = document.createElement("div")
@@ -74,5 +80,7 @@ affichage_personnage_amis.innerHTML = ""
 
     
 
+
 })
+
 

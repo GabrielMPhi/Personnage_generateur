@@ -1,23 +1,14 @@
 
 
-
-
-
-
-
-
-
-
-
 function evenements_au_debut(personnage){
     utilisation_de_la_richesse(personnage)
     personnage.amis = generer_amis()
 }
 
 function utilisation_de_la_richesse(personnage){
-    if (personnage.richesse >= 15){
-        personnage.richesse=personnage.richesse - 15
-        personnage.propriete.push("Navire")
+    if (personnage.richesse >= 35){
+        personnage.richesse=personnage.richesse - 25
+        personnage.propriete.push("Villa")
     } 
 }
 

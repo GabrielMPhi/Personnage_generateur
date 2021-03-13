@@ -10,9 +10,7 @@ let ressources = {
     liste_des_carrieres_possible : [],
     liste_des_historiques_enfance: [],
     liste_des_historiques_adolescence:[],
-    liste_des_historiques_adulte: [],
-    liste_des_vertus : ["courage", "espoir", "générosité"],
-    liste_des_vices : ["envie", "paresse"],
+    liste_des_historiques_adulte: []
 }
 
 

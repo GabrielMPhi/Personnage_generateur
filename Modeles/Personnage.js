@@ -9,8 +9,7 @@ class Personnage {
     carriere,
     nom_carriere,
     richesse,
-    vertu,
-    vice,
+    morale,
     propriete,
     amis,
     historique
@@ -24,8 +23,7 @@ class Personnage {
     this._carriere = carriere;
     this._nom_carriere = nom_carriere;
     this._richesse = richesse;
-    this._vertu = vertu;
-    this._vice = vice;
+    this._morale = morale;
     this._propriete = propriete;
     this._historique = historique;
     this._amis=amis;
@@ -95,21 +93,14 @@ class Personnage {
     this._richesse = e;
   }
 
-  get vertu() {
-    return this._vertu;
+  get morale() {
+    return this._morale;
   }
 
-  set vertu(e) {
-    this._vertu = e;
+  set morale(e) {
+    this._morale = e;
   }
 
-  get vice() {
-    return this._vice;
-  }
-
-  set vice(e) {
-    this._vice = e;
-  }
 
   get propriete() {
     return this._propriete;

@@ -12,15 +12,14 @@ class PersonnageFactory{
         let carriere=this.generer_la_carriere();
         let nom_carriere=this.trouver_nom_carriere_selon_genre(genre, carriere);
         let richesse= this.generer_richesse(carriere);
-        let vertu=this.generer_la_vertu();
-        let vice=this.generer_le_vice();
+        let morale= new Moralite(genre);
         let propriete= this.generer_propriete(carriere);
         let amis=[];
         let historique= this.generer_historique();
-
+        
         surnom = this.verifier_surnom_genre_taille(genre,taille, surnom)
 
-        return new Personnage(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, vertu, vice, propriete, amis, historique)
+        return new Personnage(genre, nom, prenom, surnom, age, taille, carriere, nom_carriere, richesse, morale, propriete, amis, historique)
     }
 
     generer_genre (){
@@ -158,27 +157,6 @@ class PersonnageFactory{
 
         return richesse_depart_personnage
     }
-
-
-    generer_la_vertu(){
-        let generer_vertu = "Sans vertu"
-        generer_vertu = ressources.liste_des_vertus[Math.floor(Math.random() * ressources.liste_des_vertus.length)]
-        return generer_vertu
-    }
-
-
-
-
-    generer_le_vice(){
-        let generer_vice = "Sans vice"
-        generer_vice = ressources.liste_des_vices[Math.floor(Math.random() * ressources.liste_des_vices.length)]
-        return generer_vice
-    }
-
-
-
-
-
 
     verifier_surnom_genre_taille(genre, taille, surnom){
 
