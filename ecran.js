@@ -27,8 +27,6 @@ const affichage_personnage_progress_vertu_ambition_personnage = document.querySe
 
 
 
-
-
 affichage_personnage_nom.innerHTML = personnage.nom
 affichage_personnage_prenom.innerHTML = personnage.prenom
 affichage_personnage_surnom.innerHTML = personnage.surnom

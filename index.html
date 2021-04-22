@@ -1,12 +1,24 @@
-<!DOCTYPE html>
+sw<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css"
     />
-    <style></style>
+
+    <style>
+      body {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/The_Windmill_at_Wijk_bij_Duurstede_1670_Ruisdael.jpg/1024px-The_Windmill_at_Wijk_bij_Duurstede_1670_Ruisdael.jpg"),
+          url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/The_Windmill_at_Wijk_bij_Duurstede_1670_Ruisdael.jpg/1024px-The_Windmill_at_Wijk_bij_Duurstede_1670_Ruisdael.jpg");
+        background-color: #cccccc;
+        background-size: cover;
+      }
+      #app {
+        opacity: 0.85;
+      }
+    </style>
   </head>
 
   <body>
@@ -79,6 +91,7 @@
                   <div class="column">
                     <div class="box">
                       <div id="courage_personnage"></div>
+
                       <progress
                         class="progress"
                         id="progress_courage_personnage"
@@ -115,6 +128,15 @@
         </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Le générateur de personnage</strong> est créer par Gabriel
+          Monette.
+        </p>
+      </div>
+    </footer>
   </body>
 
   <script type="text/javascript" src="evenements.js"></script>

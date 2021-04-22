@@ -6,4 +6,4 @@ Ce très humble projet me sert à pratiquer ce que j'apprends en Javascript. Il 
 
 ## Pour installer
 
-Il suffit de télécharger l'ensemble des fichiers et de lancer le fichier HTML.
+Il suffit de télécharger l'ensemble des fichiers et de lancer le fichier "index.html" dans un fureteur.
